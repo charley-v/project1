@@ -1,8 +1,8 @@
+// Charley Vieyra
+// CPSC 323
+// Project 1
 //
-//  main.cpp
-//  Project
-//
-//  Created by Charley on 3/18/24.
+// 
 //
 
 #include <iostream>
