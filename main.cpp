@@ -30,10 +30,11 @@ string inpFile()
     return "No File";
 }
 
-
+//global variables
 size_t position = 0;
 string str = inpFile();
 
+//returns identifier or keyword
 string keyword()
 {
     size_t start = position;
@@ -52,7 +53,8 @@ string keyword()
     }
     return "IDENTIFIER  " + token;
 }
-   
+
+//returns number
 string numbers()
 {
     size_t start = position;
@@ -64,6 +66,7 @@ string numbers()
     return "REAL        " + token;
 }
 
+//returns separator
 string separator()
 {
     vector<char> seps = {'(', ')', '[', ']', ';', '{','}'};
@@ -83,7 +86,8 @@ string separator()
     }
     return sep;
 }
-    
+
+//returns operator
 string oper()
 {
     vector<char> symbols = {'=', '<', '>', '+', '*', '/'};
@@ -104,7 +108,8 @@ string oper()
     return op;
     
 }
-    
+
+//iterates through characters and identifies what type of token it is
 void Lexer()
 {
     vector<string> tok;
