@@ -8,5 +8,5 @@ This project is a lexical analyzer written in C++, the lexical analysis is the f
 1. clone the repository
 2. On the input_scode.txt file you can write any code to be tokenized
 3. Run the main.cpp file 
-4. Tokenization will be outputted the the output.txt file.
+4. Tokenization will be outputted to the output.txt file.
 
